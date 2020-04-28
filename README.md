@@ -30,3 +30,7 @@ Illumina paired-end read sequencing simulator and BWA-MEM alignment quality eval
   - Run evaluateBWAMEM function
     
     e.g. evaluateBWAMEM('Test')
+    
+## Video presentation
+
+  https://www.youtube.com/watch?v=TgmBEx5Wjw8

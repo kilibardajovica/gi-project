@@ -18,18 +18,26 @@ Illumina paired-end read sequencing simulator and BWA-MEM alignment quality eval
 
 
 # Instructions
-  - Run simulate function. As output two FASTQ files and SAM file are created. 
-  
-    e.g. simulate('Test.fa',25,1,4,10,0,0.001,0.001)
-  - Execute BWA-MEM in terminal (If it is the first time FASTA file is used it is necessary to create index)
-  
-    e.g. (optional) bwa index Test.fa
-     
-     bwa mem Test.fa Test_1.fastq Test_2.fastq > Test_bwa.sam
-     
-  - Run evaluateBWAMEM function
+
+There are two ways to run simulator:
+  - Execute python script 'script.py' in terminal with appropriate arguments
+   
+    e.g. python script.py -g refGenomeFile -c coverage -q avgQuality -r readLength -f insertSize -s errRateSNV -i errRateInsert -d errRateDelete
     
-    e.g. evaluateBWAMEM('Test')
+  - Using Jupyter Notebook:
+  
+    - Run simulate function. As output two FASTQ files and SAM file are created. 
+
+      e.g. simulate('Test.fa',25,1,4,10,0,0.001,0.001)
+    - Execute BWA-MEM in terminal (If it is the first time FASTA file is used it is necessary to create index)
+
+      e.g. (optional) bwa index Test.fa
+
+       bwa mem Test.fa Test_1.fastq Test_2.fastq > Test_bwa.sam
+
+    - Run evaluateBWAMEM function
+
+      e.g. evaluateBWAMEM('Test')
     
 ## Video presentation
 

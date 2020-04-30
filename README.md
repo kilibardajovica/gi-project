@@ -20,9 +20,11 @@ Illumina paired-end read sequencing simulator and BWA-MEM alignment quality eval
 # Instructions
 
 There are two ways to run simulator:
-  - Execute python script 'script.py' in terminal with appropriate arguments
+  - Execute python script 'script.py' in terminal with appropriate arguments  (-h gives help on how to use script)
    
     e.g. python script.py -g refGenomeFile -c coverage -q avgQuality -r readLength -f insertSize -s errRateSNV -i errRateInsert -d errRateDelete
+    
+
     
   - Using Jupyter Notebook:
   
